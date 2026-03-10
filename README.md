@@ -67,3 +67,8 @@ npx playwright show-report
 5. **CI/CD Pipeline**:
    - GitHub Actions workflow (`.github/workflows/tests.yml`) triggers on push/PR to `main`.
    - Uploads Playwright HTML reports and traces *only on failure* to save artifact storage space.
+
+6. **Time Spent**:
+   - The total time spent on this assignment was significantly less than the estimated 6-8 hours.
+   - This efficiency was achieved by leveraging the **Google Antigravity IDE** alongside the **Playwright MCP (Model Context Protocol) Server**. 
+   - Using this AI-agentic tooling allowed for rapid exploratory testing, automated generation of Page Object Models, and instant debugging of CI race conditions, demonstrating how modern AI workflows can compress QA automation lifecycles.
