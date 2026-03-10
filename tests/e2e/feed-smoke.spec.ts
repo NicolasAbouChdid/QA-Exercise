@@ -20,9 +20,9 @@ test.describe("Smoke Tests - Route Interception", () => {
     await homePage.goto();
 
     // 3. Assert: Sidebar tags match the fixture (6 tags)
+    await expect(homePage.tagSidebar.locator("a")).toHaveCount(6, { timeout: 15000 });
     const tagNames = await homePage.getTagNames();
     expect(tagNames).toEqual(expect.arrayContaining(["playwright", "mock", "cypress"]));
-    expect(tagNames.length).toBe(6);
 
     // 4. Assert: Exactly 3 articles rendered with data from fixture
     const articleTitles = await homePage.getArticleTitles();

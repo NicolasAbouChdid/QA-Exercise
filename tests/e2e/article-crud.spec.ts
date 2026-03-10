@@ -38,8 +38,8 @@ test.describe("Article CRUD Flows", () => {
 
     // 2. Assert: redirects to article page and displays content
     await expect(page).toHaveURL(/\/article\/.+/);
-    expect(await articlePage.getTitle()).toEqual(articleData.title);
-    expect(await articlePage.getBody()).toContain("This is a markdown-supported body");
+    await expect(articlePage.titleHeading).toHaveText(articleData.title);
+    await expect(page.locator(".article-content")).toContainText("This is a markdown-supported body");
 
     // 3. Click Edit
     await articlePage.clickEdit();
@@ -55,8 +55,8 @@ test.describe("Article CRUD Flows", () => {
 
     // 5. Assert: changes reflected on article page
     await expect(page).toHaveURL(/\/article\/.+/);
-    expect(await articlePage.getTitle()).toEqual(updatedData.title);
-    expect(await articlePage.getBody()).toContain("Edited line.");
+    await expect(articlePage.titleHeading).toHaveText(updatedData.title);
+    await expect(page.locator(".article-content")).toContainText("Edited line.");
   });
 
   test("Delete Article → Verify Removal", async ({ request, page }) => {
