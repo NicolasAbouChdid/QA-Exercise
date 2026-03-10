@@ -1,0 +1,56 @@
+{
+  "articles": [
+    {
+      "slug": "playwright-e2e-automation-mock-1",
+      "title": "Playwright E2E Mock Data 1",
+      "description": "Mocked article description over intercepted route",
+      "body": "This is a mocked body",
+      "tagList": ["playwright", "mock"],
+      "createdAt": "2026-03-10T12:00:00.000Z",
+      "updatedAt": "2026-03-10T12:00:00.000Z",
+      "favorited": false,
+      "favoritesCount": 10,
+      "author": {
+        "username": "tester",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "following": false
+      }
+    },
+    {
+      "slug": "playwright-e2e-automation-mock-2",
+      "title": "Playwright E2E Mock Data 2",
+      "description": "Another intercepted article",
+      "body": "This is a mocked body",
+      "tagList": ["e2e", "testing"],
+      "createdAt": "2026-03-10T11:00:00.000Z",
+      "updatedAt": "2026-03-10T11:00:00.000Z",
+      "favorited": false,
+      "favoritesCount": 5,
+      "author": {
+        "username": "qa_guru",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "following": false
+      }
+    },
+    {
+      "slug": "playwright-e2e-automation-mock-3",
+      "title": "Playwright E2E Mock Data 3",
+      "description": "Third mock item",
+      "body": "This is a mocked body",
+      "tagList": ["playwright"],
+      "createdAt": "2026-03-10T10:00:00.000Z",
+      "updatedAt": "2026-03-10T10:00:00.000Z",
+      "favorited": false,
+      "favoritesCount": 0,
+      "author": {
+        "username": "tester",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "following": false
+      }
+    }
+  ],
+  "articlesCount": 3
+}

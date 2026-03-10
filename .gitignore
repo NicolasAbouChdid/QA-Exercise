@@ -1,0 +1,20 @@
+node_modules/
+dist/
+playwright-report/
+test-results/
+.playwright/
+.env
+.DS_Store
+
+# Temporary & Debugging Files
+test-output.txt
+tsc-output.txt
+get_api.js
+credentials.txt
+report.json
+
+# Tooling & IDEs
+.playwright-mcp/
+.vscode/
+.idea/
+Thumbs.db
